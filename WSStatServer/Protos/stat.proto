@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServiceStatServer";
+
+package stat;
+
+// The statistic service definition.
+service Stat {
+  // Demande une stat
+  rpc GetStat (StatRequest) returns (StatReply);
+}
+
+// The request message containing objet et nom de stat
+message StatRequest {
+  string object = 1;
+  string stat = 2;
+}
+
+// The response message containing the stat value.
+message StatReply {
+  string value = 1;
+}

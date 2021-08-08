@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\stat.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.38.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.ApplicationBlocks.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

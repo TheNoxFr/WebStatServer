@@ -21,6 +21,7 @@ namespace ServiceStatServer
 
         public override Task<StatReply> GetStat(StatRequest request, ServerCallContext context)
         {
+         //   _logger.LogInformation("GetStat");
             return Task.FromResult(new StatReply
             {
                 Value = _donnees.GetNbIxnWorkbinAgent(int.Parse(request.Object))

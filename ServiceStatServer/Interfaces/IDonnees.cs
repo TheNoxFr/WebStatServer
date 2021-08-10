@@ -9,7 +9,7 @@ namespace ServiceStatServer.Interfaces
     {
         void AjoutAgent(int dbid, string employeeid, string firstname, string lastname, string supid);
 
-        void AjoutInteraction(string ixnid, string workbin, string employeeid);
+        void AjoutInteraction(string ixnid, string workbin, string employeeid, string media);
 
         string GetNbIxnWorkbinAgent(int dbid);
     }

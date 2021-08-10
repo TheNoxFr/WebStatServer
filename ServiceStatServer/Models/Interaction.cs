@@ -10,5 +10,6 @@ namespace ServiceStatServer.Models
         public string IxnId { get; set; }
         public string AgentId { get; set; }
         public string Workbin { get; set; }
+        public string Media { get; set; }
     }
 }

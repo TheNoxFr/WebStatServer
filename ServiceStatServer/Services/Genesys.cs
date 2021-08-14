@@ -54,7 +54,7 @@ namespace ServiceStatServer.Services
 
             ixnServerHost = _configuration["MyConfig:IxnServer:Host"];
             ixnServerPort = int.Parse(_configuration["MyConfig:IxnServer:Port"]);
-            ixnServerClientName = _configuration["MyConfig:IxnServer:WSCCPulse"];
+            ixnServerClientName = _configuration["MyConfig:IxnServer:ClientName"];
             tenantId = _configuration["MyConfig:IxnServer:TenantId"];
 
         }

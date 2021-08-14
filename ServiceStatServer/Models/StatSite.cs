@@ -56,7 +56,9 @@ namespace ServiceStatServer.Models
 
         public void AddInteraction(string media, string tasktype, string echeance)
         {
-            int isEcheance = echeance.Equals("1") ? 1 : 0;
+            int isEcheance = 0;
+            if ((echeance != null) && echeance.Equals("1"))
+                isEcheance = 1;
 
             if (media.Equals("email"))
             {
@@ -116,7 +118,9 @@ namespace ServiceStatServer.Models
 
         public void SupprimeInteraction(string media, string tasktype, string echeance)
         {
-            int isEcheance = echeance.Equals("1") ? 1 : 0;
+            int isEcheance = 0;
+            if ((echeance != null) && echeance.Equals("1"))
+                isEcheance = 1;
 
             if (media.Equals("email"))
             {

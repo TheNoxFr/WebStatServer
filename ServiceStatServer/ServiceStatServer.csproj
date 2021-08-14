@@ -28,6 +28,9 @@
     <Reference Include="Genesyslab.Platform.Commons">
       <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.dll</HintPath>
     </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Genesyslab.Platform.Commons.Connection">
       <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Commons.Connection.dll</HintPath>
     </Reference>
@@ -36,6 +39,9 @@
     </Reference>
     <Reference Include="Genesyslab.Platform.Configuration.Protocols">
       <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols">
+      <HintPath>C:\Program Files\GCTI\Platform SDK for .NET 8.5\Bin\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
     </Reference>
   </ItemGroup>
 

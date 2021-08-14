@@ -9,6 +9,8 @@ namespace ServiceStatServer.Interfaces
     {
         bool CnxConfServer();
         void DecnxConfServer();
+        bool CnxIxnServer();
+        void DecnxIxnServer();
         void GetAgents();
     }
 }

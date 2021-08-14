@@ -9,7 +9,10 @@ namespace ServiceStatServer.Models
     {
         public string IxnId { get; set; }
         public string AgentId { get; set; }
+        public string PlaceId { get; set; }
         public string Workbin { get; set; }
         public string Media { get; set; }
+        public string TaskType { get; set; }
+        public string Echeance { get; set; }
     }
 }

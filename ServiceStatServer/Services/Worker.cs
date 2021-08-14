@@ -37,11 +37,21 @@ namespace ServiceStatServer.Services
                 _dal.Deconnexion();
             }
 
+            if (_genesys is not null)
+            {
+                _genesys.CnxIxnServer();
+            }
+
             await base.StartAsync(cancellationToken);
         }
 
         public override async Task StopAsync(CancellationToken cancellationToken)
         {
+            if (_genesys is not null)
+            {
+                _genesys.DecnxIxnServer();
+            }
+
             await base.StopAsync(cancellationToken);
         }
 

@@ -21,7 +21,7 @@ namespace ServiceStatServer
 
         public override Task<StatReply> GetStat(StatRequest request, ServerCallContext context)
         {
-         //   _logger.LogInformation("GetStat");
+//            _logger.LogInformation("GetStat");
             switch (request.Stat)
             {
                 case "NbEmailWorkbin" :

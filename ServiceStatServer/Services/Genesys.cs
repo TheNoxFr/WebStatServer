@@ -95,6 +95,14 @@ namespace ServiceStatServer.Services
             CfgPersonQuery query = new CfgPersonQuery();
             query.IsAgent = 0;
 
+            _logger.LogInformation("TEST:Information");
+            _logger.LogError("TEST:Error");
+            _logger.LogDebug("TEST:Debug");
+            _logger.LogTrace("TEST:Trace");
+            _logger.LogWarning("TEST:Warning");
+            _logger.LogCritical("TEST:Critical");
+
+
             ICollection<CfgPerson> listeAgents = confService.RetrieveMultipleObjects<CfgPerson>(query);
 
             foreach (CfgPerson p in listeAgents)

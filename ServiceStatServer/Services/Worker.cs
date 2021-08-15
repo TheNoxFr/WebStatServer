@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using ServiceStatServer.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,13 @@ namespace ServiceStatServer.Services
     {
         private readonly IGenesys _genesys;
         private readonly IDAL _dal;
+        private readonly ILogger<StatService> _logger;
 
-        public Worker(IGenesys genesys, IDAL dal)
+        public Worker(IGenesys genesys, IDAL dal, ILogger<StatService> logger)
         {
             _genesys = genesys;
             _dal = dal;
+            _logger = logger;
         }
 
         public override async Task StartAsync(CancellationToken cancellationToken)

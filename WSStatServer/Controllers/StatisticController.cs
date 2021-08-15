@@ -44,9 +44,17 @@ namespace WSStatServer.Controllers
         public async Task<ActionResult<Statistic>> PostStatistic(Statistic statistic)
         {
             StatRequest statRequest = new StatRequest { Object = statistic.Id, Stat = statistic.Stat };
-            StatReply statReply = await _connexion.client.GetStatAsync(statRequest);
 
-            statistic.Value = statReply.Value;
+            try
+            {
+                StatReply statReply = await _connexion.client.GetStatAsync(statRequest);
+
+                statistic.Value = statReply.Value;
+            }
+            catch (Exception)
+            {
+                statistic.Value = "-1";
+            }
 
             return statistic;
         }
